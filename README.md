@@ -1,0 +1,1 @@
+- Make bootable usb with the latest iso
