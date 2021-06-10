@@ -15,3 +15,25 @@ Download the git repository with git clone https://gitlab.com/eflinux/arch-basic
 cd arch-basic
 chmod +x install-uefi.sh
 run with ./install-uefi.sh
+
+
+- Vimium options
+< Excluded URLs and keys >
+https?://www.youtube.com/*
+1234567890m
+
+< Custom key mappings >
+# Insert your preferred key mappings here.
+unmap /
+unmap f
+unmap t
+
+map H previousTab
+map J goBack
+map K goForward
+map L nextTab
+
+map <c-u> scrollPageUp
+map <c-d> scrollPageDown
+map F LinkHints.activateMode
+map s LinkHints.activateMode
