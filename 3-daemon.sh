@@ -38,7 +38,7 @@ paru -S --noconfirm linux linux-headers linux-firmware \
   mpd mpdris2 mpv neofetch neovide-git neovim nerd-fonts-jetbrains-mono nerd-fonts-source-code-pro \
   networkmanager network-manager-applet nextcloud-client nitrogen nodejs notification-daemon npm \
   onefetch onlyoffice-bin openssh openssl pacfinder pamixer papirus-icon-theme pass picom playerctl \
-  polkit polkit-qt5 progress pulseaudio pulseaudio-bluetooth pulseaudio-qt pv python \
+  polkit polkit-qt5 progress pulseaudio pulseaudio-bluetooth pulseaudio=qt pv python \
   qualculate-gtk qt5-base qt5ct-kde qt6-base reflector ripgrep rofi rsync rust \
   slock speedtest-cli sshfs starship stylua-bin sxhkd \
   task tesseract tesseract-data-eng tesseract-data-kor tesseract-data-kor_vert tesseract-data-osd \
