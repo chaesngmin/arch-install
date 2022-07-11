@@ -1,13 +1,5 @@
 #! /bin/bash
 
-####### Clone paru
-mkdir -p "$HOME/.config"
-cd "$HOME/.config" || exit
-pacman -Syu --needed base-devel
-git clone https://aur.archlinux.org/paru.git
-cd paru || exit
-makepkg -si
-
 ####### CPU related
 ### Intel
 paru -S --noconfirm intel-ucode mesa mesa-utils
@@ -34,15 +26,16 @@ paru -S --noconfirm linux linux-headers linux-firmware \
   mpd mpdris2 mpv neofetch neovide-git neovim nerd-fonts-jetbrains-mono nerd-fonts-source-code-pro \
   networkmanager network-manager-applet nextcloud-client nitrogen nodejs notification-daemon npm \
   onefetch onlyoffice-bin openssh openssl \
-  pacfinder pacman-config pamixer papirus-icon-theme pass picom-ibhagwan-git playerctl \
-  polkit polkit-qt5 progress pulseaudio pulseaudio-bluetooth pulseaudio-qt pv python python-pynvim \
+  pacfinder pacman-config pamixer papirus-icon-theme pass pcmanfm-gtk3 picom-ibhagwan-git playerctl \
+  polkit polkit-qt5 progress pulseaudio pulseaudio-bluetooth pulseaudio-qt pv \
+  python python-pynvim python-setuptools \
   qualculate-gtk qt5-base qt5ct-kde qt6-base \
   redshift-git redshift-gtk-git reflector ripgrep rofi rsync rust \
   slock speedtest-cli sshfs starship stylua-bin sxhkd syncthing syncthingtray system-config-printer \
   task tesseract tesseract-data-eng tesseract-data-kor tesseract-data-kor_vert tesseract-data-osd \
   thunderbird birdtray \
   timeshift-bin timeshift-autosnap tldr++ tmux trash-cli trayer ttf-font-awesome ttf-ubuntu-font-family \
-  udiskie udisks2 ueberzug unzip urlview vim wpa_supplicant \
+  udiskie udisks2 ueberzug unzip urlview usbutils vim wpa_supplicant \
   xclip xdg-user-dirs xdg-utils xdg-ninja-git xdotool xh xidlehook xmobar xmonad xmonad-contrib \
   yarn zathura zathura-pdf-mudf zenity zip zoxide zsh zsh-completions
 
@@ -51,4 +44,9 @@ systemctl enable --now NetworkManager
 systemctl enable --now bluetooth
 systemctl enable --now cups
 systemctl enable --now sshd
+systemctl enable --now playerctld.service
+systemctl enable --now mpd.service
 systemctl enable --now slock@chaes.service
+systemctl enable --now syncthing@chaes.service
+systemctl enable --now cronie.service
+auto-cpufreq --install
