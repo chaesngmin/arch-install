@@ -16,7 +16,7 @@ paru -S --noconfirm facetimehd-firmware bcwc-pcie-git xf86-input-mtrack-git
 ####### Install packages
 paru -S --noconfirm linux linux-headers linux-firmware \
   adobe-source-code-han-sans-kr-fonts adwaita-qt5 alsa-utils apple-fonts arch-wiki-docs auto-cpufreq \
-  bat blueman bluez bluez-libs bluez-utils brave-bin bzip2 \
+  bat balena-etcher blueman bluez bluez-libs bluez-utils brave-bin bzip2 \
   calcurse caffeine-ng colorpicker coreutils cpufetch cronie cups curl \
   dialog docker docker-compose dua-cli dunst \
   efibootmgr exa exfat-utils fd feh ffmpeg ffmpeg4.4 ffmpegthumbnailer figlet flameshot fontconfig forx fzf \
@@ -34,7 +34,7 @@ paru -S --noconfirm linux linux-headers linux-firmware \
   slock speedtest-cli sshfs starship stylua-bin sxhkd syncthing syncthingtray system-config-printer \
   task tesseract tesseract-data-eng tesseract-data-kor tesseract-data-kor_vert tesseract-data-osd \
   thunderbird birdtray \
-  timeshift-bin timeshift-autosnap tldr++ tmux trash-cli trayer ttf-font-awesome ttf-ubuntu-font-family \
+  timeshift timeshift-autosnap tldr++ tmux trash-cli trayer ttf-font-awesome ttf-ubuntu-font-family \
   udiskie udisks2 ueberzug unzip urlview usbutils vim wpa_supplicant \
   xclip xdg-user-dirs xdg-utils xdg-ninja-git xdotool xh xidlehook xmobar xmonad xmonad-contrib \
   yarn zathura zathura-pdf-mudf zenity zip zoxide zsh zsh-completions
